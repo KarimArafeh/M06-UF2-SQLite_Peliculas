@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Sqlite (Xerial) - movie.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+    <schema id="1">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="ACTOR"/>
+    <table id="3" parent="1" name="PELICULAS"/>
+    <table id="4" parent="1" name="PERSONAJES"/>
+    <column id="5" parent="2" name="ID_act">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="6" parent="2" name="NOM_act">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="7" parent="2" name="Fecha_Nacamiento">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <key id="8" parent="2">
+      <columns>ID_act</columns>
+      <primary>1</primary>
+    </key>
+    <column id="9" parent="3" name="ID_peli">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="10" parent="3" name="NOM_peli">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="11" parent="3" name="Fecha">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <key id="12" parent="3">
+      <columns>ID_peli</columns>
+      <primary>1</primary>
+    </key>
+    <column id="13" parent="4" name="PERSONAJE">
+      <mandatory>1</mandatory>
+      <data-type>TEXT(0,-1)|12</data-type>
+    </column>
+    <column id="14" parent="4" name="ID_Personaje">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="15" parent="4" name="ID_Actor">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="16" parent="4" name="ID_pelicula">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+  </database-model>
+</dataSource>
